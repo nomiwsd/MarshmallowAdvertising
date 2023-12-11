@@ -6,25 +6,25 @@ import { FaArrowRight } from "react-icons/fa";
 const Competitorpage = () => {
   return (
     <section>
-      <div className="w-full flex p-8">
-        <div className="bg-white text-[#1E2834] w-1/2 p-8 ">
-          <div className="p-8">
-            <p className="text-4xl font-poppins font-bold text-left leading-10">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 p-8">
+        <div className="bg-white text-[#1E2834] p-4 md:p-8 ">
+          <div className="md:p-8">
+            <p className="text-2xl md:text-4xl font-poppins font-bold text-left leading-10">
               We’re not just a marketing company, we’re part of the team.
             </p>
           </div>
         </div>
-        <div className="w-1/2"></div>
+        <div className=""></div>
       </div>
 
-      <div className="w-full max-h-screen flex">
-        <div className="w-1/2 ">
+      <div className="w-full max-h-screen grid grid-cols-1 md:grid-cols-2">
+        <div>
           <img src={Mainimg} alt="" className="mainimg h-full" />
           <div className="dotsbg -translate-y-28 h-32">
             <img src={dotsimg} alt="" srcset="" className="hidden" />
           </div>
         </div>
-        <div className="w-1/2 bg-[#EC3C44]  -my-8 p-12">
+        <div className="bg-[#EC3C44]  -my-8 p-12">
           <div className=" text-white flex h-full flex-col justify-center items-start">
             <p className="text-sm font-poppins font-semibold pt-10 pb-4">
               WHAT WE DO
@@ -48,8 +48,8 @@ const Competitorpage = () => {
         </div>
       </div>
 
-      <div className="w-full px-16 py-8 flex">
-        <div className="w-1/2 px-8 py-2">
+      <div className="w-full px-4 gmy-96 md:my-2 md:px-16 md:py-8 grid grid-cols-1 md:grid-cols-2">
+        <div className=" md:px-8 py-2">
           <div className="text-black">
             <p className="text-sm font-poppins font-semibold pt-10 pb-4">
               HOW WE DO IT
@@ -66,7 +66,7 @@ const Competitorpage = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
           <p className="font-poppins text-sm font-medium pb-4">
             We’re a down-to-earth, straight-talking team who will spend your
             marketing budget like it’s our own. We understand that there isn’t a

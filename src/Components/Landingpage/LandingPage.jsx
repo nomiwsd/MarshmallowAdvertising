@@ -18,10 +18,10 @@ const LandingPage = () => {
         <div className="flex justify-between items-center w-full">
           <div className="flex justify-center items-start w-1/2">
           <div className="flex-col">
-            <h1 className="text-[60px] md:text-[25px] lg:text-[35px]  font-bold font-poppins text-white">
+            <h1 className="text-[15px] md:text-[25px] lg:text-[35px]  font-bold font-poppins text-white">
               We Are The Top
             </h1>
-            <p className="text-[75px] md:text-[25px] lg:text-[45px] font-bangers text-white textanimation z-10">
+            <p className="text-[20px] md:text-[25px] lg:text-[45px] font-bangers text-white textanimation z-10">
               Agency in Town
             </p>
           </div>
@@ -32,8 +32,8 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="bg-[#1E2834] relative w-full z-30 px-8">
-        <div className="bg-[#1E2834] flex justify-between px-8 py-8 md:-translate-y-16 lg:-translate-y-20 xl:-translate-y-28 border-2 border-red-700">
-          <div className="flex flex-col justify-start items-start w-1/2 px-8">
+        <div className="bg-[#1E2834] grid grid-cols-1 md:grid-cols-2 md:px-8 md:py-8 -translate-y-4 md:-translate-y-16 lg:-translate-y-20 xl:-translate-y-28 border-2 border-red-700">
+          <div className="flex flex-col justify-start items-start  px-8">
             <h4 className="text-[#FFFFDE] text-sm font-medium font-poppins py-2">
               Marshmallow Advertising
             </h4>
@@ -60,9 +60,9 @@ const LandingPage = () => {
           </div>
 
           {/* Cards */}
-          <div className="flex flex-col justify-start  w-1/2">
+          <div className="flex flex-col justify-start px-4">
             <div className="container mx-auto">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div className="w-full">
                   <img
                     src={companylogo1}
