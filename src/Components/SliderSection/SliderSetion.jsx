@@ -5,6 +5,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
+// import 'swiper/swiper-bundle.css';
+
+// Import Swiper styles
+// import 'swiper/swiper.min.css';
 // import required modules
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import Digitalbg from "../../Assets/Untitled-1.png";
@@ -15,6 +19,22 @@ import Mediabg from "../../Assets/33-1.png";
 import Aboutbg from "../../Assets/Header-About-About-_1_.png";
 import { FaArrowRight, FaBullseye, FaHeart } from "react-icons/fa";
 const SliderSetion = () => {
+  const breakpoints = {
+    // when window width is <= 640px
+    640: {
+      slidesPerView: 1,
+    },
+    // when window width is <= 768px
+    768: {
+      slidesPerView: 2,
+    },
+    // when window width is <= 1024px
+    1024: {
+      slidesPerView: 4,
+    },
+  };
+
+  
   return (
     <section className="relative w-full">
       <div className="mx-8 z-0 relative">
@@ -25,7 +45,8 @@ const SliderSetion = () => {
             delay: 1000,
             disableOnInteraction: true,
           }}
-          slidesPerView={4}
+          breakpoints={breakpoints}
+          slidesPerView={1}
           spaceBetween={20}
           loop={true}
           pagination={{
@@ -48,8 +69,8 @@ const SliderSetion = () => {
               </h2>
 
               <div className="flex flex-col justify-start items-start">
-                <img src={Digitalbg} alt="" className="h-52" />
-                <div className="bg-black text-white px-4 pt-5 pb-3 h-40">
+                <img src={Digitalbg} alt="" className="h-52 md:h-44" />
+                <div className="bg-black text-white px-4 pt-5 pb-3 h-42 xl:h-40">
                   <h3 className="font-poppins text-xl font-bold mb-3">
                     Digital
                   </h3>
@@ -78,8 +99,8 @@ const SliderSetion = () => {
               </h2>
 
               <div className="flex flex-col justify-start items-start">
-                <img src={Socialbg} alt="" className="h-52" />
-                <div className="bg-black text-white px-4 pt-5 pb-3 h-40">
+                <img src={Socialbg} alt="" className="h-52 md:h-44 " />
+                <div className="bg-black text-white px-4 pt-5 pb-3 h-42 lg:h-[200px] xl:h-36">
                   <h3 className="font-poppins text-xl font-bold mb-3">
                     Social
                   </h3>
@@ -108,8 +129,8 @@ const SliderSetion = () => {
               </h2>
 
               <div className="flex flex-col justify-start items-start">
-                <img src={Aboutbg} alt="" className="h-52" />
-                <div className="bg-black text-white px-4 pt-5 pb-3 h-40">
+                <img src={Aboutbg} alt="" className="h-44 lg:h-[154px] xl:h-[182px]"/>
+                <div className="bg-black text-white px-4 pt-5 pb-3 h-42 lg:h-48 xl:h-36">
                   <h3 className="font-poppins text-xl font-bold mb-3">About</h3>
                   <p className="font-poppins text-xs font-medium">
                     WE ARE NOT A 360 AGENCY, BUT WE ARE GOOD AT WHAT WE DO!
@@ -136,7 +157,7 @@ const SliderSetion = () => {
               </h2>
               <div className="flex flex-col justify-start items-start">
                 <img src={Mediabg} alt="" className="h-52" />
-                <div className="bg-black text-white px-4 pt-5 pb-3 h-40">
+                <div className="bg-black text-white px-4 pt-5 pb-3 h-42 md:h-34 lg:h-48 xl:h-36">
                   <h3 className="font-poppins text-xl font-bold mb-3">Media</h3>
                   <p className="font-poppins text-xs font-medium">
                     We plan, buy and execute media campaigns from concepts and
@@ -163,7 +184,7 @@ const SliderSetion = () => {
               </h2>
               <div className="flex flex-col justify-start items-start">
                 <img src={Creativebg} alt="" className="h-52" />
-                <div className="bg-black text-white px-4 pt-5 pb-3 h-40">
+                <div className="bg-black text-white px-4 pt-5 pb-3 h-[166px] md:h-[136px] lg:h-[194px] xl:h-36">
                   <h3 className="font-poppins text-xl font-bold mb-3">
                     Creative
                   </h3>

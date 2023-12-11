@@ -11,7 +11,7 @@ function App() {
       <Header />
       <LandingPage/>
       <Competitorpage/>
-      {/* <SliderSetion/> */}
+      <SliderSetion/>
     </div>
   );
 }

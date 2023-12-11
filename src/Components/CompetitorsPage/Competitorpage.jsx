@@ -48,7 +48,7 @@ const Competitorpage = () => {
         </div>
       </div>
 
-      <div className="w-full px-4 gmy-96 md:my-2 md:px-16 md:py-8 grid grid-cols-1 md:grid-cols-2">
+      <div className="w-full px-4 my-96 md:my-2 md:px-16 md:py-8 grid grid-cols-1 md:grid-cols-2">
         <div className=" md:px-8 py-2">
           <div className="text-black">
             <p className="text-sm font-poppins font-semibold pt-10 pb-4">
